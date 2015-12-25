@@ -33,5 +33,5 @@ Challenge Output
 
 edcf = deedeed
 bnik = bikini
-poil = pililloo
+poil = lollipop
 vybu = bubby
