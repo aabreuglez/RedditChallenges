@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -47,15 +48,20 @@ public class EasyPlayingTheStockMarketTest {
      */
     @Test
     public void testMarket() {
-        String expResult="18.88 19.03";
-        String result = uno.market();
-        assertEquals(expResult, result);
+        ArrayList<Double> expResult = new ArrayList<Double>();
+        expResult.add(18.88);
+        expResult.add(19.03);
+        ArrayList<Double> result = uno.market();
+        assertArrayEquals(expResult.toArray(), result.toArray());
     }
     
     @Test
-    public void testMarket2() {
-        String expResult="8.03 9.34";
-        String result = challenge.market();
-        assertEquals(expResult, result);
+    public void testChallenge() {
+        ArrayList<Double> expResult = new ArrayList<Double>();
+        expResult.add(8.03);
+        expResult.add(9.34);
+        
+        ArrayList<Double> result = challenge.market();
+        assertArrayEquals(expResult.toArray(), result.toArray());
     }  
 }

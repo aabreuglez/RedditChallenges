@@ -34,9 +34,9 @@ public class EasyPlayingTheStockMarket {
         this._input1 = input1;
     }
         
-    public String market(){
+    public ArrayList<Double> market(){
         //For assertions
-        String devolver="";
+        ArrayList<Double> devolver = new ArrayList<Double>();
         
         //Parsing string value to ArrayList of Double
         List<Double> temp = Stream.of(_input1.split(" ")).map(Double::parseDouble).collect(toList());
@@ -46,9 +46,7 @@ public class EasyPlayingTheStockMarket {
         int max=0;
         Double diff=9999999.99;
         
-        /*The purpose is to get the mayor benefit, buy low, sell high
-        */
-        
+        //The purpose is to get the mayor benefit, buy low, sell high
         for (int i=0; i < numbers.size(); i++){    
             //We have to wait 1 turn per selling so i+2
             for(int j = i+2; j < numbers.size(); j++){
@@ -57,13 +55,13 @@ public class EasyPlayingTheStockMarket {
                     max = j;
                     min = i;
                 }
-                
-                
+                              
             }
         }
-        devolver += numbers.get(min).toString();
-        devolver += " ";
-        devolver += numbers.get(max).toString();
+        
+        devolver.add(numbers.get(min));
+        devolver.add(numbers.get(max));
+        
         return devolver;
     }
     
