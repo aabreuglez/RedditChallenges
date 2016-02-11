@@ -48,3 +48,4 @@ Then in week 3 we have 2 fruits from plant 1, 1 from plant 2, so we can plant 3 
 5
 14
 9 
+
