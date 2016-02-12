@@ -17,21 +17,25 @@ hjklo
 
 Your program should emit the longest valid English language word you can make for each keyboard configuration.
 
-abcd = bacaba
-qwer = ewerer
-hjklo = kolokolo
+abcd = bacaba // abaca on enable1.txt 
+qwer = ewerer // weewee on enable1.txt
+hjklo = kolokolo // holloo on enable1.txt
+
+edcf = deeded
+bnik = bikini
+poil = lollipop
+vybu = bubby
 
 #Challenge Input
 
 4
-edcf
-bnik
-poil
-vybu
-
+edcf 
+bnik 
+poil 
+vybu 
 Challenge Output
 
-edcf = deedeed
+edcf = deeded
 bnik = bikini
 poil = lollipop
 vybu = bubby
